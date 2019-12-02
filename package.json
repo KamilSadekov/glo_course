@@ -1,0 +1,25 @@
+{
+  "name": "glo_course",
+  "version": "1.0.0",
+  "description": "this is my last work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamilSadekov/glo_course.git"
+  },
+  "author": "Kamil Sadekov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamilSadekov/glo_course/issues"
+  },
+  "homepage": "https://github.com/KamilSadekov/glo_course#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
