@@ -462,7 +462,7 @@ body {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
 
 .button--outline {
   padding: 17px 46px; }
@@ -488,7 +488,7 @@ body {
       margin-left: 8px; }
 
 .title {
-  margin: 0;
+  margin-bottom: 0.928rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
