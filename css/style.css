@@ -496,7 +496,7 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   html {
     font-size: 12px; }
   .nav__item {
