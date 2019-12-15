@@ -18,3 +18,42 @@
         border: 1px solid $light
         background-color: transparent
         color: $light  
+
+.label
+    color: rgba($light, 0.5) 
+    font-size: 1.07rem       
+.input
+    border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+    background-color: transparent
+    font-size: 1.285rem
+    color: $light
+    padding: 0.5rem
+    &::placeholder
+        color: $light
+
+.policy
+  &__checkbox
+      opacity: 0
+      visibility: hidden
+      &:checked +
+          .policy__label
+              &::before
+                  background: $primary url('../img/checked.svg') no-repeat center center 
+          
+  &__label
+      display: flex
+      align-items: center
+      &::before
+          content: ""   
+          width: 18px
+          height: 18px
+          border: 1px solid $primary
+          border-radius: 1px 
+          cursor: pointer
+          margin-right: 0.64rem
+
+
+
+
+
