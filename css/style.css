@@ -673,6 +673,8 @@ img {
       color: #131313; } }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -684,6 +686,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     max-width: 36.35rem;
     position: relative;
