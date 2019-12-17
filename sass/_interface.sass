@@ -1,59 +1,55 @@
 .button
-    padding: 11px 24px
-    border: none
-    border-radius: 2px 
-    text-transform: uppercase
-    font-size: 0.93rem
-    &:hover
-        cursor: pointer
-
-    &--primary
-        background-color:  $primary
-        color: $light
-        box-shadow: 0px 5px 15px rgba($primary, 0.2)
-        transition: box-shadow 0.3s
-        &:hover
-            box-shadow: none
-    &--outline 
-        border: 1px solid $light
-        background-color: transparent
-        color: $light  
-
-.label
-    color: rgba($light, 0.5) 
-    font-size: 1.07rem       
-.input
-    border: none
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
-    background-color: transparent
-    font-size: 1.285rem
+  padding: 11px 24px
+  border: none
+  border-radius: 2px 
+  text-transform: uppercase
+  font-size: 0.93rem
+  &:hover
+    cursor: pointer
+  &--primary
+    background-color: $primary
     color: $light
-    padding: 0.5rem
-    &::placeholder
-        color: $light
-
+    box-shadow: 0 5px 15px rgba($primary, 0.2)
+    transition: box-shadow 0.3s
+    &:hover
+      box-shadow: none
+  &--outline
+    border: 1px solid $light
+    background-color: transparent
+    color: $light
+.label
+  font-family: 'Futura Book', cursive
+  font-size: 1.07rem
+  &--light
+    color: rgba($light, 0.5)
+.input
+  background: transparent
+  border: none
+  border-bottom: 1px solid rgba($light, 0.15)
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0
+  &::placeholder
+    color: $light
 .policy
   &__checkbox
-      opacity: 0
-      visibility: hidden
-      &:checked +
-          .policy__label
-              &::before
-                  background: $primary url('../img/checked.svg') no-repeat center center 
-          
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .policy__label
+        &::before
+          background: $primary url("../img/checked.svg") no-repeat center / 0.8rem
   &__label
-      display: flex
-      align-items: center
-      &::before
-          content: ""   
-          width: 18px
-          height: 18px
-          border: 1px solid $primary
-          border-radius: 1px 
-          cursor: pointer
-          margin-right: 0.64rem
+    display: flex
+    align-items: center 
+    font-size: 1.14rem  
+    &::before
+      content: ''
+      height: 18px
+      width: 18px
+      border: 1px solid $primary
+      border-radius: 1px
+      cursor: pointer
+      margin-right: 0.64rem
 
-
-
-
-
+  

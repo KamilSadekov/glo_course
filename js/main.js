@@ -1,20 +1,24 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
     const modal = document.querySelector('.modal');
-    const modalButton = document.querySelectorAll('[data-toggle=modal]');
-    const btnClose = document.querySelector('.modal__close');
-
-    const closeModal = document.querySelector('modal--close');
-
+    const modalBtn = document.querySelectorAll('[data-toggle=modal]');
     const switchModal = () => {
-        modal.classList.toggle('modal--visible');
-    }
-    modalButton.forEach(element => {
-        element.addEventListener('click', switchModal);
+      modal.classList.toggle('modal--visible');
+    };
+  
+    modalBtn.forEach(element => {
+      element.addEventListener('click', switchModal);
     });
-     
-    btnClose.addEventListener('click', switchModal);
-
-    
-    
-
-  }); 
+  
+    document.body.addEventListener('click', (event) => {
+      let target = event.target;
+      if (target.matches('.modal__close') || target.matches('#popup-window')) {
+        switchModal();
+      }
+    });
+  
+    document.addEventListener('keyup', (event) => {
+      if (event.code === 'Escape') {
+        modal.classList.remove('modal--visible');
+      }
+    });
+  });

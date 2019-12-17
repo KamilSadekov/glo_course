@@ -1,99 +1,111 @@
 .hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-top: 100px 
+  background: $dark url('../img/hero.jpg') no-repeat center / cover
+  height: 100vh
+  color: $light
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.5)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 3.46rem
+    background: $dark
+  &__content
     position: relative
-    display: flex
-    flex-direction: column 
-    justify-content: center
-    align-items: flex-start 
-    background: $dark url("../img/hero.jpg") no-repeat center/cover
-    height: 100vh
-    color: $light
-    padding-top: 100px
-    &::before
+    max-width: 47.85rem
+    margin-left: 4.28rem
+  &__text
+    font-size: 1.57rem
+    max-width: 500px
+    line-height: 131%
+    margin: 0
+    margin-bottom: 2.92rem
+  &__button
+    margin-right: 16px    
+  &__instagram
+    position: absolute
+    left: 0
+    top: 0
+    max-width: 82px
+    height: 100%
+  &__scroll-down
+      position: absolute
+      z-index: 3
+      display: flex
+      justify-content: center
+      align-items: center
+      left: 0
+      bottom: 0
+      min-width: 17.6rem
+      min-height: 6.92rem
+      font-size: 0.87rem
+      font-family: 'Yeseva One'
+      background-color: $dark  
+      text-transform: uppercase
+      text-decoration: none
+      color: $light
+      &::after
         content: ''
-        top: 0
-        left: 0
-        position: absolute
-        width: 100%
-        height: 100%
-        background-color: rgba($dark, 0.7)
-    &__content
-        position: relative
-        max-width: 47.85rem
-        margin-left: 4.28rem
-    &__title
-        margin-bottom: 1rem 
+        background: url(../img/Vector.svg) no-repeat center
+        width: 29px
+        height: 29px
+        border: 1px solid $primary
+        border-radius: 50%
+        margin-left: 17px 
 
-    &__text
-        font-size: 1.571rem
-        line-height: 131%
-        max-width: 500px
-        margin: 0
-        margin-bottom: 3rem
-    &__button
-        margin-right: 20px
-        padding: 18px 28px         
-    &__instagram
-        position: absolute
-        left: 0
-        top: 0
-        max-width: 80px
-        height: 100%
-    &__scrol-down
-        font-family: 'Yeseva One'
-        font-size: 0.85rem
-        position: absolute
-        display: flex
-        justify-content: center
-        align-items: center  
-        left: 0
-        bottom: 0
-        min-width: 17.64rem
-        min-height: 6.92rem
-        background-color: $dark
-        text-transform: uppercase
-        text-decoration: none
-        color: $light
-        &::after
-         background: url('../img/Vector.svg') no-repeat center
-         content: ''
-         width: 30px
-         height: 30px
-         border: 2px solid $primary
-         border-radius: 50%
-         margin-left: 18px
-.button--outline
-         padding: 17px 46px   
-         
 
-.instagram 
+.instagram
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $dark
+  &__link
     display: flex
-    justify-content: center
-    align-items: center
-    background-color: $dark
-    &__link
-        display: flex 
-        align-items: center
-        text-transform: uppercase
-        color: $primary
-        text-decoration: none
-        transform: rotate(90deg)
-        font-size: 1.1rem
-        &::after
-            content: ''
-            width: 50px
-            height: 1px
-            background-color: $primary
-            margin-left: 8px  
-
+    align-items: center  
+    text-transform: uppercase
+    text-decoration: none
+    color: $primary
+    transform:  rotate(90deg)
+    line-height: 0.8
+    font-size: 1.1rem
+    letter-spacing: -0.4px
+    &::after
+      content: ''
+      width: 50px
+      height: 1px
+      background-color: $primary
+      margin-left: 14px
 
 .title
-    margin-bottom: 0.928rem
-    font-family: 'Yeseva One', cursive
-    text-transform: uppercase
-    font-size: 2.857rem
-    line-height: 1.4
+  margin: 0
+  margin-bottom: 1.36rem
+  font-family: 'Yeseva One', cursive
+  text-transform: uppercase
+  font-size: 2.86rem
+  line-height: 1.33
+  letter-spacing: -0.13px
+  &--primary
+    color: $primary
+.hero
+  .button
     &--primary
-        color: $primary
-
-
+      padding: 18px 25px
+      letter-spacing: 0.3px
+    &--outline
+      padding: 17px 42px
+      letter-spacing: 0.4px
 
