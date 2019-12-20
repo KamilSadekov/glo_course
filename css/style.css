@@ -755,7 +755,7 @@ img {
 
 .swiper-button-prev {
   left: 0;
-  background: url("../img/arrow-prev.svg"); }
+  background: url("../img/arrow-prev.svg") no-repeat center; }
 
 .swiper-button-next {
   background: url("../img/arrow-next.svg"); }
