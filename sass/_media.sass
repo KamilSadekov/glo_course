@@ -4,7 +4,12 @@
   .nav
     &__item
       margin-right: 1rem
-
+@media screen and ( max-width: 1063px )
+  .card
+    &__text
+      width: 90%
+    &__title
+      font-size: 15px
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -13,28 +18,116 @@
       display: none
     &__content
       margin-left: 0
+  .types
+    .container
+      width: 87%
+    .row
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__card
+      margin-bottom: 80px
+    .section-title__heading
+      letter-spacing: 0.9px
+      margin-bottom: 14px
+    &__section-title
+      margin-bottom: 40px 
+  
 @media screen and ( max-width: 767px )
   .row
     flex-direction: column
     align-items: center
-  .types
-    &__card
-      margin-bottom: 5rem
   .card
     &__text
       margin-left: 0
   .design
     background-color: $dark
+    .container
+      width: 87%
+    .card
+      &__text
+        padding: 17px 29px
+        margin-top: -135px
+        max-width: 261px
+      &__title
+        letter-spacing: -0.4px
+        font-size: 15px
+      &__list
+        font-size: 13px
+        line-height: 169.8%
+        margin-bottom: 24px
+        letter-spacing: -0.3px
+      &__pricetag
+        padding: 9px 44px
+        font-size: 15px
+        letter-spacing: -0.3px
+        line-height: 138.6%
     &__section-title
       color: $light
     &__card
         margin-bottom: 5.7rem
+  .types
+    .card
+      &__text
+        max-width: 79%
+        margin-top: -136px
+      &__title
+        font-size: 15px
+        line-height: 99%
+        letter-spacing: -0.4px
+      &__item
+        font-size: 13px
+        line-height: 169.8%
+      &__list
+        margin-bottom: 23px
+      &__pricetag
+        font-size: 15px
+        padding: 10px 30px
+        letter-spacing: -0.3px
+  .projects
+    padding: 36px 0
+    .section-title
+      margin-bottom: 36px
+      &__text
+        display: contents
+    .col-50
+      width: 90%
+    .section-title
+      text-align: center
+      &__word
+        display: grid
+        &::after
+          content: ''
+          width: 0
+          height: 0
+          margin-left: 0
+      &__text
+        font-size: 14px
+        line-height: 158.48%
+        max-width: 305px
+        letter-spacing: -0.1px
+      &__heading
+        letter-spacing: -0.5px
+        line-height: 144.6%
+    .swiper-slide__text
+      flex-basis: 50%
+      &-image
+        margin-top: -13rem
+  .col-50
+    .swiper-slide-image
+      margin-top: 0
+  .end
+    margin-top: 33px
+  .mobile-order-top
+    order: -1
+  .swiper-slide
+    &__heading
+      font-size: 14px
+      line-height: 138.6%
+    &__value
+      font-size: 14px
+      line-height: 135.84%
 @media screen and ( max-width: 570px )
-  .section
-    &-title
-      &__description
-        margin-top: 1.64rem
-        font-size: 1.29rem
   .contacts
     &__button
       display: none
@@ -48,16 +141,45 @@
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      max-width: 339px
     &__title
-      margin-bottom: 1.14rem  
+      font-style: normal
+      font-weight: normal
+      font-size: 23px
+      line-height: 132.83%
+      margin-bottom: 10px  
+      letter-spacing: -0.7px
     &__text
-      font-size: 1.29rem
       margin-bottom: 2.28rem
+      font-size: 18px
+      line-height: 135.84% 
     &__button
       display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem
+      margin-bottom: 1.85rem  
+  .hero
+    .button--primary
+      width: 100%
+      font-weight: 500
+      font-size: 13px
+      line-height: 15px 
+      letter-spacing: -0.1px
+    .button--outline
+      width: 100%
+      font-weight: 500
+      font-size: 13px
+      line-height: 15px 
+      letter-spacing: -0.1px
+      
+  .header
+    .container
+      width: 87%
+    .menu
+      &__logo
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.2px
 @media screen and ( max-height: 520px  )
   .hero
     &__scroll-down
@@ -66,11 +188,11 @@
   .card
     &__text
       max-width: 17.21rem
-    &__title
-      font-size: 1rem
     &__list
       font-size: 0.98rem
-  
-  
-
+@media screen and ( max-width: 330px  )
+  .types
+    .card
+      &__title
+        font-size: 14px
   
