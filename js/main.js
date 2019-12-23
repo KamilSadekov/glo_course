@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
     next.css('left', prev.width() + 37 + bullets.width() + 37)
     bullets.css('left', prev.width() + 37)
+
+    new WOW().init();
+
+
   });
   
   

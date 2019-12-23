@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Repair Design Project</title>
   
@@ -16,7 +17,7 @@
     <div class="container">
       <div class="menu">
 
-        <div class="logo menu__logo">
+        <div class="logo menu__logo wow fadeInLeft">
           Repair Design Project
         </div>
 
@@ -47,11 +48,11 @@
       </div>
       <div class="container">
         <div class="hero__content">
-          <h1 class="title hero__title">Турецкий ремонт
+          <h1 class="title hero__title wow fadeInLeft" data-wow-delay="0.2s">Турецкий ремонт
             в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-          <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline" data-toggle="modal">Отправить заявку</button>
+          <p class="hero__text wow fadeInLeft" data-wow-delay="0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+          <button class="button hero__button button--primary wow fadeInLeft" data-wow-delay="0.4s" data-toggle="modal">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline wow fadeInLeft" data-wow-delay="0.4s" data-toggle="modal">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -59,6 +60,12 @@
       <a href="#" class=" hero__scroll-down">листайте вниз</a>
     </section>
     <!-- /.hero -->
+
+
+
+
+
+
     
     <section class="section section--dark projects">
       <div class="container">
@@ -183,6 +190,60 @@
     </section>
     <!-- /.projects -->
 
+
+    <section class="section control">
+        <div class="container">
+            <div class="section-title control__section-title section-title--light">
+                <h2 class="section-title__heading">онлайн контроль</h2>
+                <div class="section-title__image">
+                    <img src="img/camera.svg">
+                </div>
+            </div>
+            <div class="control__video video">
+                <img src="img/playButton.svg" alt="playButton" class="video__play">
+            </div>
+            <!-- /.control__video video -->
+            <p class="control__text">
+                На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+            </p>
+
+            
+            <form action="#" class="form control__form">
+
+                <div class="control__input_group">
+                    <label for="user-name" class="label form__label label--grey control__label">Имя</label>
+                    <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+                </div>
+        
+                <div class="control__input_group">
+                    <label for="user-phone" class="label form__label label--grey control__label">Телефон</label>
+                    <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                </div>
+        
+                
+        
+            
+        
+                <button class="button button--primary control__button">Отправить</button>
+
+
+                <div class="policy control__policy">
+                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
+                    <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+                  </div>
+                  <!-- /.policy -->
+        
+              </form>
+
+
+
+        </div>
+        <!-- /container -->
+     </section>
+
+
+
+
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
@@ -194,9 +255,14 @@
           <!-- /. section-title__image -->
         </div>
         <!-- /.section-title -->
+
+
+
+
+
         <div class="row">
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow fadeInLeft" data-wow-delay="0.2s">
               <img src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
@@ -243,7 +309,7 @@
           </div>
           <!-- /.col -->
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow fadeInUp" data-wow-delay="0.4s">
               <img src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
@@ -290,7 +356,7 @@
           </div>
           <!-- /.col -->
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow fadeInRight" data-wow-delay="0.6s">
               <img src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -361,8 +427,8 @@
         <!-- /.section-title -->
         <div class="row">
           <div class="col">
-            <div class="card design__card">
-              <img src="img/design/design-1.jpg" alt="Минимальный" class="card__image">
+            <div class="card design__card wow fadeInLeft" data-wow-delay="0.2s">
+              <img src="img/type-1.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Минимальный</h3>
                 <!-- /.card__title -->
@@ -396,8 +462,8 @@
           </div>
           <!-- /.col -->
           <div class="col">
-            <div class="card design__card">
-              <img src="img/design/design-2.jpg" alt="Минимальный" class="card__image">
+            <div class="card design__card wow fadeInUp" data-wow-delay="0.4s">
+              <img src="img/type-2.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Стандартный</h3>
                 <!-- /.card__title -->
@@ -440,8 +506,8 @@
           </div>
           <!-- /.col -->
           <div class="col">
-            <div class="card design__card">
-              <img src="img/design/design-3.jpg" alt="Минимальный" class="card__image">
+            <div class="card design__card wow fadeInRight" data-wow-delay="0.6s">
+              <img src="img/type-3.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Полный</h3>
                 <!-- /.card__title -->
@@ -506,6 +572,10 @@
 
   </main>
   <!-- /.main -->
+
+
+
+  
   <div class="modal" id="popup-window" >
     <div class="modal__dialog">
       <button class="modal__close"></button>
@@ -513,13 +583,13 @@
       <form action="#" class="form modal__form">
 
         <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
 
         <label for="user-phone" class="label form__label label--light">Телефон</label>
-        <input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+        <input type="tel" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
 
         <label for="user-email" class="label form__label label--light">Email</label>
-        <input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
+        <input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
 
         <div class="policy modal__policy">
           <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
@@ -537,6 +607,7 @@
   <a href="#" class="scrollup"></a>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/button_scrollup.js"></script>
 </body>
