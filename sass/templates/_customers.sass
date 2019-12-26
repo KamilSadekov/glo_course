@@ -1,0 +1,80 @@
+.customers
+  padding-bottom: 360px
+  background: url(../img/customers/customers-bg.jpg) center no-repeat / cover
+  &__section-title
+    margin-bottom: 70px 
+  .section-title
+    &__description
+      max-width: 360px
+      margin-top: 18px
+      font-weight: normal
+      font-size: 20px
+      line-height: 27px
+      text-align: center
+      color: $customers
+
+  .card
+    &__name
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+    &__description
+      font-family: FuturaBookC
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 180%
+      color: $description
+      letter-spacing: -0.1px
+      margin-bottom: 48px
+    &__price
+      max-width: 294px
+      min-height: 54px
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      background-color: $primary
+      position: relative
+      left: -20px
+  .name  
+    &__image
+      border-radius: 38px
+      margin-right: 23px
+    &__title
+      text-transform: none
+      font-family: 'Yeseva One'
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 23px
+      padding-top: 18px
+      letter-spacing: 0.1px
+      color: $black
+  .price
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5)
+    &__meters
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-left: 10px
+      &::after
+        content: ''
+        width: 1px
+        height: 100%
+        background-color: $light
+      img
+        margin-right: 15px
+    &__days
+      display: flex
+      flex-direction: row
+      align-items: center
+      img
+        margin-right: 14px
+    &__number
+      font-family: Yeseva One
+      font-style: normal
+      font-weight: normal
+      margin-right: 18px;
+      font-size: 17px
+      line-height: 24px
+      color: $light

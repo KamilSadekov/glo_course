@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d822d173-8a3e-477e-8b32-697624f10580&lang=ru_RU" type="text/javascript">
+  </script>
   <title>Repair Design Project</title>
   
   
@@ -17,7 +19,7 @@
     <div class="container">
       <div class="menu">
 
-        <div class="logo menu__logo wow fadeInLeft">
+        <div class="logo menu__logo">
           Repair Design Project
         </div>
 
@@ -32,7 +34,7 @@
 
         <div class="contacts menu__contacts">
           <a href="tel:+7(999)786-32-99" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          <button class="button contacts__button button--primary requestCall" data-toggle="modal">Заказать звонок</button>
         </div>
 
       </div> 
@@ -48,11 +50,11 @@
       </div>
       <div class="container">
         <div class="hero__content">
-          <h1 class="title hero__title wow fadeInLeft" data-wow-delay="0.2s">Турецкий ремонт
+          <h1 class="title hero__title">Турецкий ремонт
             в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-          <p class="hero__text wow fadeInLeft" data-wow-delay="0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-          <button class="button hero__button button--primary wow fadeInLeft" data-wow-delay="0.4s" data-toggle="modal">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline wow fadeInLeft" data-wow-delay="0.4s" data-toggle="modal">Отправить заявку</button>
+          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+          <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline" data-toggle="modal">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -60,12 +62,6 @@
       <a href="#" class=" hero__scroll-down">листайте вниз</a>
     </section>
     <!-- /.hero -->
-
-
-
-
-
-
     
     <section class="section section--dark projects">
       <div class="container">
@@ -190,59 +186,54 @@
     </section>
     <!-- /.projects -->
 
-
     <section class="section control">
-        <div class="container">
-            <div class="section-title control__section-title section-title--light">
-                <h2 class="section-title__heading">онлайн контроль</h2>
-                <div class="section-title__image">
-                    <img src="img/camera.svg">
-                </div>
-            </div>
-            <div class="control__video video">
-                <img src="img/playButton.svg" alt="playButton" class="video__play">
-            </div>
-            <!-- /.control__video video -->
-            <p class="control__text">
-                На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
-            </p>
-
-            
-            <form action="#" class="form control__form">
-
-                <div class="control__input_group">
-                    <label for="user-name" class="label form__label label--grey control__label">Имя</label>
-                    <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
-                </div>
-        
-                <div class="control__input_group">
-                    <label for="user-phone" class="label form__label label--grey control__label">Телефон</label>
-                    <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
-                </div>
-        
-                
-        
-            
-        
-                <button class="button button--primary control__button">Отправить</button>
-
-
-                <div class="policy control__policy">
-                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
-                    <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
-                  </div>
-                  <!-- /.policy -->
-        
-              </form>
-
-
-
+      <div class="container">
+        <div class="section-title control__section-title">
+          <h2 class="section-title__heading">Онлайн контроль</h2>
+          <!-- /.section__heading -->
+          <div class="section-title__image">
+            <img src="img/camera.svg" alt="video">
+          </div>
+          <!-- /. section-title__image -->
         </div>
-        <!-- /container -->
-     </section>
+        <!-- /.section-title -->
+        <div class="control__video video">
+          <img src="img/playButton.svg" alt="play-icon" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <div class="control__line"></div>
+        <!-- /.control__line -->
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш
+          сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте
+          заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <!-- /.control__text -->
+        <form action="send.php" method="POST" class="form control__form">
+        
+          <div class="control__input-group">
+            <label for="user-name" class="label form__label">Имя</label>
+            <input type="text" autocomplete="off"  name="userName" class="input form__input control__input" id="control-user-name" placeholder="Как вас зовут:">
+          </div>
+        
+          <div class="control__input-group">
+            <label for="user-phone"class="label form__label">Телефон</label>
+            <input type="tel" autocomplete="off"  name="userPhone" class="input form__input control__input" id="control-user-phone" placeholder="Ваш номер телефона:">
+          </div>
+        
+          <button class="button button--primary control__button">Отправить</button>
 
-
-
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
+            <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+        
+        </form>
+        <!-- /.control__form -->
+        <!-- /.control__text -->
+    </section>
+    <!-- /.section control -->
 
     <section class="section types">
       <div class="container">
@@ -255,14 +246,9 @@
           <!-- /. section-title__image -->
         </div>
         <!-- /.section-title -->
-
-
-
-
-
         <div class="row">
-          <div class="col-30">
-            <div class="card types__card wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="col-30 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="card types__card">
               <img src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
@@ -308,8 +294,8 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-30">
-            <div class="card types__card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-30 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card types__card">
               <img src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
@@ -355,8 +341,8 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-30">
-            <div class="card types__card wow fadeInRight" data-wow-delay="0.6s">
+          <div class="col-30 wow fadeInRight" data-wow-delay="0.4s">
+            <div class="card types__card">
               <img src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -426,9 +412,9 @@
         </div>
         <!-- /.section-title -->
         <div class="row">
-          <div class="col">
-            <div class="card design__card wow fadeInLeft" data-wow-delay="0.2s">
-              <img src="img/type-1.jpg" alt="Минимальный" class="card__image">
+          <div class="col wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="card design__card">
+              <img src="img/design-1.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Минимальный</h3>
                 <!-- /.card__title -->
@@ -461,9 +447,9 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col">
-            <div class="card design__card wow fadeInUp" data-wow-delay="0.4s">
-              <img src="img/type-2.jpg" alt="Минимальный" class="card__image">
+          <div class="col wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card design__card">
+              <img src="img/design-2.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Стандартный</h3>
                 <!-- /.card__title -->
@@ -505,9 +491,9 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col">
-            <div class="card design__card wow fadeInRight" data-wow-delay="0.6s">
-              <img src="img/type-3.jpg" alt="Минимальный" class="card__image">
+          <div class="col wow fadeInRight" data-wow-delay="0.4s">
+            <div class="card design__card">
+              <img src="img/design-3.png" alt="Минимальный" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Полный</h3>
                 <!-- /.card__title -->
@@ -570,96 +556,194 @@
     </section>
     <!-- /.section design -->
 
-  </main>
-  <footer class="footer section--dark">
-        <div class="container">
-          <div class="footer__wrap">
-            <h3 class="footer__title">остались вопросы?</h3>
-            <form action="#" class="form footer__form">
-              <div class="input-group footer__input-group">
-                <label for="user-name" class="label form__label label--light">Имя</label>
-                <input type="text" autocomplete="off" name="userName" class="input form__input footer__input input--light"
-                  id="user-name" placeholder="Как вас зовут:">
-              </div>
-              <div class="input-group footer__input-group">
-                <label for="user-phone" class="label form__label label--light">Телефон</label>
-                <input type="tel" autocomplete="off" name="userPhone" class="input form__input footer__input input--light"
-                  id="user-phone" placeholder="Ваш номер телефона:">
-              </div>
-              <div class="input-group footer__input-group footer__input-group--full-width">
-                <label for="user-question" class="label form__label label--light">Вопрос</label>
-                <input type="text" autocomplete="off" name="userQuestion" class="input form__input footer__input input--light"
-                  id="user-question" placeholder="Я хочу спросить:">
-              </div>
-              <div class="policy footer__policy">
-                <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
-                <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой
-                  данных</label>
-              </div>
-              <!-- /.policy -->
-              <button class="button button--primary footer__button">Отправить</button>
-            </form>
-            <!-- /.form -->
-          </div>
-          <!-- /.footer-wrap -->
-          <div class="heading footer__heading">
-            <h2 class="txt heading__txt">
-              Ростов на дону, Торговый центр Plaza
-              Прямой телефон +7 (999) 768 32 99
-            </h2>
-            <div class="icon footer__icon">
-              <div class="message">
-                <img src="img/footer-message-icon.png" alt="footer-message-icon">
-              </div>
-              <div class="instagramm">
-                <img src="img/footer-instagram-icon.png" alt="footer-instagram-icon">
-              </div>
-            </div>
-          </div>
-          <div class="map footer__map">
-            <script type="text/javascript" charset="utf-8" async
-              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38d0e8ce9bcd87a72bc287872874cbeee51763aac6045ab7386ec4d32ccbe938&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false">
-              </script>
-          </div>
-          <!-- /.footer__map -->
+    <section class="section customers">
+    <div class="container">
+      <div class="section-title customers__section-title">
+        <h2 class="section-title__heading">Наши клиенты</h2>
+        <!-- /.section__heading -->
+        <div class="section-title__image">
+          <img src="img/hand.png" alt="hand">
         </div>
-        <!-- /.container -->
-        <div class="footer__menu">
-          <div class="container">
-            <div class="menu">
-      
-              <div class="logo menu__logo">
-                Repair Design Project
-              </div>
-      
-              <nav class="nav menu__nav">
-                <a href="#" class="nav__item">Главная </a>
-                <a href="#" class="nav__item">Проекты</a>
-                <a href="#" class="nav__item">Замер</a>
-                <a href="#" class="nav__item">Команда</a>
-                <a href="#" class="nav__item">Отзывы</a>
-                <a href="#" class="nav__item">Контакты</a>
-              </nav>
-      
-              <div class="contacts menu__contacts">
-                <a href="tel:+7(999)786-32-99" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                <button class="button contacts__button button--primary requestCall" data-toggle="modal">Заказать
-                  звонок</button>
-              </div>
-      
-            </div>
-            <!-- /.menu -->
-          </div>
-        </div>
-      </footer>
-      <!-- /.footer -->
+        <!-- /. section-title__image -->
+        <p class="section-title__description">
+          80% наших клиентов рекомендуют нас своим знакомым и друзьям
+        </p>
+        <!-- /.section-title__description -->
       </div>
-      <!-- /.container -->
+      <div class="row">
+        <div class="col-10 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="card customers__card">
+            <div class="name card__name">
+              <img src="img/customers/Kate.png" alt="photo-1" class="name__image">
+              <h3 class="title name__title">Савельева<br>Екатерина Львовна</h3>
+            </div>
+            <div class="description card__description">
+              Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя.
+              Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее,
+              чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое.  Я
+              рекомендую этих мастеров.
+            </div>
+            <div class="price card__price">
+              <div class="meters price__meters">
+                <img src="img/customers/meters.png" alt="meters">
+                <span class="price__number">40 M<sup>2</sup></span>
+              </div>
+              <div class="days price__days">
+                <img src="img/customers/days.png" alt="days">
+                <span class="price__number">48 дней</span>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-10 -->
+
+        <div class="col-10 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="card customers__card">
+            <div class="name card__name">
+              <img src="img/customers/BIGBear.png" alt="photo-2" class="name__image">
+              <h3 class="title name__title">Большов Михаил Анатольевич</h3>
+            </div>
+            <div class="description card__description">
+              Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих
+              себя.
+              Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен
+              быстрее,
+              чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое.
+              Я рекомендую этих мастеров.
+            </div>
+            <div class="price card__price">
+              <div class="meters price__meters">
+                <img src="img/customers/meters.png" alt="meters">
+                <span class="price__number">90 M<sup>2</sup></span>
+              </div>
+              <div class="days price__days">
+                <img src="img/customers/days.png" alt="days">
+                <span class="price__number">128 дней</span>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-10 -->
+
+        <div class="col-10 wow fadeInRight" data-wow-delay="0.4s">
+          <div class="card customers__card">
+            <div class="name card__name">
+              <img src="img/customers/Dan4.png" alt="photo-3" class="name__image">
+              <h3 class="title name__title">Хасанов Даниил Муратович</h3>
+            </div>
+            <div class="description card__description">
+              Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих
+              себя.
+              Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен
+              быстрее,
+              чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое.
+              Я рекомендую этих мастеров.
+            </div>
+            <div class="price card__price">
+              <div class="meters price__meters">
+                <img src="img/customers/meters.png" alt="meters">
+                <span class="price__number">56 M<sup>2</sup></span>
+              </div>
+              <div class="days price__days">
+                <img src="img/customers/days.png" alt="days">
+                <span class="price__number">86 дней</span>
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-10 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    </section>
+    <!-- /.section customers -->
+  </main>
+  <!-- /.main -->
+  <footer class="footer section--dark">
+    <div class="container">
+      <div class="footer__wrap">
+        <h3 class="footer__title">остались вопросы?</h3>
+        <form action="send.php" method="POST" class="form footer__form">
+          <div class="input-group footer__input-group">
+            <label for="user-name" class="label form__label label--light">Имя</label>
+            <input type="text" autocomplete="off" name="userName" class="input form__input footer__input input--light"
+              id="footer-user-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="input-group footer__input-group">
+            <label for="user-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" autocomplete="off" name="userPhone" class="input form__input footer__input input--light"
+              id="footer-user-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <div class="input-group footer__input-group footer__input-group--full-width">
+            <label for="user-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" autocomplete="off" name="userQuestion" class="input form__input footer__input input--light"
+              id="footer-user-question" placeholder="Я хочу спросить:">
+          </div>
+          <div class="policy footer__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
+            <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой
+              данных</label>
+          </div>
+          <!-- /.policy -->
+          <button class="button button--primary footer__button">Отправить</button>
+        </form>
+        <!-- /.form -->
+      </div>
+      <!-- /.footer-wrap -->
+      <div class="heading footer__heading">
+        <h2 class="txt heading__txt">
+          Ростов на дону, Торговый центр Plaza
+          Прямой телефон +7 (999) 768 32 99
+        </h2>
+        <div class="icon footer__icon">
+          <div class="message">
+            <img src="img/footer-message-icon.png" alt="footer-message-icon">
+          </div>
+          <div class="instagramm">
+            <img src="img/footer-instagram-icon.png" alt="footer-instagram-icon">
+          </div>
+        </div>
+      </div>
+      <div class="map footer__map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38d0e8ce9bcd87a72bc287872874cbeee51763aac6045ab7386ec4d32ccbe938&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false">
+          </script>
+      </div>
+      <!-- /.footer__map -->
+    </div>
+    <!-- /.container -->
+    <div class="footer__menu">
+      <div class="container">
+        <div class="menu">
+  
+          <div class="logo menu__logo">
+            Repair Design Project
+          </div>
+  
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item">Главная </a>
+            <a href="#" class="nav__item">Проекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+  
+          <div class="contacts menu__contacts">
+            <a href="tel:+7(999)786-32-99" class="phone contacts__phone">+7 (999) 768-32-99</a>
+            <button class="button contacts__button button--primary requestCall" data-toggle="modal">Заказать
+              звонок</button>
+          </div>
+  
+        </div>
+        <!-- /.menu -->
+      </div>
+    </div>
   </footer>
-  <!-- /.footer section section--dark -->
-
-
-
+  <!-- /.footer -->
   
   <div class="modal" id="popup-window" >
     <div class="modal__dialog">
@@ -667,17 +751,26 @@
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
       <form action="send.php" method="POST" class="form modal__form">
 
-        <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+        <div class="input-group modal__input-group">
+          <label for="user-name" class="label form__label label--light">Имя</label>
+          <input type="text" autocomplete="off" name="userName" class="input form__input modal__input input--light" id="modal-user-name"
+            placeholder="Как вас зовут:">
+        </div>
 
-        <label for="user-phone" class="label form__label label--light">Телефон</label>
-        <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+        <div class="input-group modal__input-group">
+          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input input--light" id="modal-user-phone"
+            placeholder="Ваш номер телефона:">
+        </div>
 
-        <label for="user-email" class="label form__label label--light">Email</label>
-        <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
+        <div class="input-group modal__input-group">
+          <label for="user-email" class="label form__label label--light">Email</label>
+          <input type="email" autocomplete="off" name="userEmail" class="input form__input modal__input input--light" id="modal-user-email"
+            placeholder="Ваш email">
+        </div>
 
         <div class="policy modal__policy">
-          <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox">
+          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
           <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
@@ -697,5 +790,6 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/button_scrollup.js"></script>
+  
 </body>
 </html>

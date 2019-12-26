@@ -1,74 +1,92 @@
-.control 
-    &__section-title
-        margin-bottom: 31px
-        margin-top: -30rem
-    &__video
-        display: flex
-        margin: auto    
-        position: relative
-        max-width: 817px
-        min-height: 434px
-        background: $dark url('../img/vidphoto.png') center no-repeat
-        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
-        margin-bottom: 62px
-        &::before
-            content: ''
-            position: absolute
-            width: 100%
-            height: 100%
-            background-color: rgba(black , 0.8)
-    &__text
-        max-width: 571px
-        margin: auto
-        font-family: FuturaBookC
-        font-style: normal
-        font-weight: normal
-        font-size: 20px
-        line-height: 34px
-        text-align: center
-        color: #363636     
-        margin-bottom: 60px
-        &::before
-            margin: auto
-            margin-bottom: 35px
-            content: ''
-            width: 55px
-            height: 1.5px 
-            background-color: $primary
-            display: block
-            border-radius: 30px
-    &__form
-        display: flex
-        flex-wrap: wrap
-        max-width: 770px
-        margin: auto
-        justify-content: space-between
-    &__input_group
-        display: flex
-        flex-direction: column 
-    &__input
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3)   
-        width: 231px
-        height: 45px  
-    &__label       
-        margin-bottom: -2px
-    &__policy
-        flex-basis: 100%     
-        margin-top: 33px
-        &-label
-            justify-content: center
-    &__button
-        width: 200px
-        height: 51px             
-
-
-        
-
-
-.video
+.control  
+  &__section-title
+    margin-bottom: 32px
+    margin-top: -360px
+  .section-title
+    &__heading
+      font-size: 20px
+      line-height: 28px
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 0.1px
+      margin-bottom: 12px
+      color: $light
+    &__image
+      &::before
+        height: 1px
+      &::after
+        height: 1px
+        margin: 0 8px
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 817px
+    min-height: 434px
+    background: $dark url('../../img/vidphoto.png') center no-repeat
+    box-shadow: 0 20px 50px rgba($dark, 0.15)
+    margin-bottom: 62px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: rgba($dark, 0.8)
+  &__form
+    display: flex
+    flex-wrap: wrap
+    max-width: 769px
+    margin: auto
+    justify-content: space-between
+  &__policy
+    flex-basis: 100%
+    margin-top: 39px
+  .policy__label
+    justify-content: center
+  .video
     &__play
-        position: relative       
-        margin: auto    
-
-.label--grey        
-    color:  rgba(54, 54, 54, 0.3)
+      position: relative
+      margin: auto
+  &__text
+    display: flex
+    margin: auto
+    font-size: 20px
+    line-height: 34px
+    text-align: center
+    color: #363636
+    max-width: 571px
+    margin-bottom: 62px
+  &__line
+    display: flex
+    justify-content: center
+    margin-bottom: 27px
+    &::after
+      content: ''
+      width: 55px
+      height: 2px
+      border-radius: 30px 
+      background-color: $primary
+  &__input
+    padding: 0
+    padding-bottom: 8px
+    border-bottom: 1px solid rgba($dark, 0.15)
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 30%
+  &__button
+        padding: 0 61px
+        font-weight: 500
+        font-size: 15px
+        line-height: 18px
+  .form
+    &__label
+      font-size: 15px
+      line-height: 20px
+      color: rgba(54, 54, 54, 0.5)
+    &__input
+      color: $dark
+      &::placeholder
+        font-size: 18px
+        line-height: 24px
+        color: #363636

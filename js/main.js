@@ -44,24 +44,24 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  
+  // валидация формы modal__form
   $('.modal__form').validate({
     errorClass: "invalid",
     errorElement: "div",
     
     rules: {
-      
+      // строчное правило
       userName: {
         required: true,
         minlength: 2
       },
       userPhone: "required",
-      
+      // правило объект (блок)
       userEmail: {
         required: true,
         email: true
       }
-    },  
+    },  // сообщения
     messages: {
       userName: {
         required: "Введите ваше имя",
@@ -72,25 +72,38 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email в формате: name@domain.com"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами, через 10 минут');
+          $(form)[0].reset();
+          modal.classList.remove('modal--visible');
+        }
+      });
     }
+
   });
 
 
 
-  
+  // валидация формы control__form
   $('.control__form').validate({
     errorClass: "invalid",
     errorElement: "div",
 
     rules: {
-      
+      // строчное правило
       userName: {
         required: true,
         minlength: 2
       },
       userPhone: "required"
     },
-     
+     // сообщения
     messages: {
       userName: {
         required: "Введите ваше имя",
@@ -98,25 +111,36 @@ $(document).ready(function () {
       },
       userPhone: "Введите ваш номер телефона"
     },
-    
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами, через 10 минут');
+          $(form)[0].reset();
+        }
+      });
+    }
   });
 
 
-  
+  //валидация формы footer__form
   $('.footer__form').validate({
     errorClass: "invalid",
     errorElement: "div",
 
     rules: {
-      
+      // строчное правило
       userName: {
         required: true,
         minlength: 2
       },
       userPhone: "required",
       userQuestion: "required"
-      
-    },
+      // правило объект (блок)
+    },  // сообщения
     messages: {
       userName: {
         required: "Введите ваше имя",
@@ -124,14 +148,22 @@ $(document).ready(function () {
       },
       userPhone: "Введите ваш номер телефона",
       userQuestion: "Задайте ваш вопрос"      
+    },
+    submitHandler: function(form) {
+      $.ajax({ 
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами, через 10 минут');
+          $(form)[0].reset();
+        }
+      });
     }
   });
-
 });
-
-
-
-
+  // маска для телефона
   $(document).ready(function () {
     $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
-});
+  });
