@@ -1,0 +1,87 @@
+.steps
+  padding-top: 2rem  
+  padding-bottom: 32.642rem
+  &-title
+    margin-top: 14px
+    margin-bottom: 87px
+    font-style: normal
+    font-weight: normal
+    font-size: 27px
+    line-height: 37px
+  &__swiper
+    &-pagination
+      width: auto 
+      bottom: 6.9rem 
+      & .swiper-pagination-bullet
+        background: rgba($light, 0.3)
+        width: 0.7rem
+        height: 0.7rem
+        margin: 0 9px 
+        &-active
+          background: $light
+    &-button
+      &-prev, &-next
+        bottom: 6.9rem
+        top: auto
+        background-size: 42px
+        width: 42px
+        height: 14px
+        &::after
+          display: none
+      &-prev
+        background: url('../img/arrow-prev.svg') no-repeat center
+        left: 0
+      &-next
+        background: url('../img/arrow-next.svg') no-repeat center 
+    &-slide
+      width: 54.52rem
+      height: 27rem
+      overflow: hidden
+      &-description
+        max-width: 24.07rem
+      &-index
+        font-family: 'Yeseva One', cursive
+        font-size: 1.286rem 
+        line-height: 1.786rem
+        text-transform: uppercase
+      &-heading
+        max-width: 14rem
+        font-weight: normal
+        font-size: 1.07rem
+        line-height: 23px
+        margin-top: 1.3rem
+      &-text
+        font-size: 1.07rem
+        line-height: 1.786rem
+        margin-top: 0.7rem
+  &__tabs
+    position: relative
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 54.52rem
+    margin-top: -1rem
+    padding: 0
+    z-index: 2
+    &-item  
+      width: 9.6rem      
+      opacity: 0.3
+      font-size: 1.07rem
+      margin-bottom: 2.9rem
+      cursor: pointer
+      margin-right: 11rem      
+      &:nth-child(3n)
+        margin-right: 0
+        width: 7.14rem
+    &-number
+      font-family: 'Yeseva One', cursive
+      text-transform: uppercase
+      border-bottom: 1px solid $primary
+    &-text
+      display: block      
+      margin-top: 0.9rem
+.navigation
+  margin-top: 9.1rem
+.active
+  opacity: 1

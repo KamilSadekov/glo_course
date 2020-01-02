@@ -1,46 +1,59 @@
 .types
-  &__section-title
-    margin-bottom: 2rem
-    letter-spacing: -0.7px
-.section-title
-  &__heading
-    margin-bottom: 13px
-    font-size: 20px
-    letter-spacing: 0.1px
+    &__section-title
+        margin-bottom: 2.214rem
+    &__card, .desing__card
+        max-width: 392px
 .card
-  &__image
-    display: block
-    width: 100%
-  &__text
-    position: relative
-    max-width: 23.6rem
-    margin: 0 auto
-    margin-top: -9.2rem
-    padding: 1.79rem 2.1431rem
-    background-color: $light
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
-  &__title
-    font-family: 'Yeseva One', cursive
-    font-size: 1.29rem
-    margin-top: 0
-    margin-bottom: 0.7rem
-  &__list
-    padding: 0 0 0 1rem
-    margin: 0
-    font-size: 1.07rem
-    line-height: 1.79rem
-    color: $secondary
-    margin-bottom: 29px
-  &__pricetag
-    position: absolute
-    left: 0
-    font-size: 1.29rem
-    font-family: 'Yeseva One', cursive
-    text-transform: uppercase
-    background-color: $primary
-    color: $light
-    padding: 1.3rem 2.6rem
-@media screen and ( max-width: 731px )
-  .card
+    &__image
+        display: block
+        width: 100%
+    &__animation
+        animation: work 5s
+    &__text
+        position: relative
+        max-width: 23.6rem
+        width: 96%
+        margin: 0 auto
+        margin-top: -9.1rem
+        padding: 1.79rem 2.14rem
+        background-color: #fff
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    &__title
+        font-family: 'Yeseva One', cursive
+        font-size: 1.29rem
+        font-weight: 400
+        margin-top: 0
+        margin-bottom: 0.92rem
+        coror: $dark
+    &__list
+        padding: 0 0 0 1rem
+        margin: 0
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $secondary
+        margin-bottom: 2.2rem
     &__pricetag
-      font-size: 1rem
+        position: absolute
+        left: 0
+        bottom: -1.79rem
+        font-size: 1.29rem
+        font-family: 'Yeseva One', cursive
+        text-transform: uppercase
+        background-color: $primary
+        color: $light
+        padding: 1.214rem 2.6rem
+        font-weight: 400
+
+@keyframes work 
+    0%
+        opacity: 0
+        border-radius: 50%
+    20% 
+        opacity: 0.2
+        border-radius: 40%
+    50%
+        opacity: 0.5
+        border-radius: 30%
+    100%
+        opacity: 1
+        border-radius: 0

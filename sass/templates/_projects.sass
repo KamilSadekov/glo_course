@@ -1,47 +1,60 @@
 .projects
-  padding-bottom: 360px
+    padding-bottom: 24rem
 .swiper
-  &-slide
-    display: flex
-    flex-wrap: wrap
-    &-image
-      margin-top: -13rem
-    &__value
-      letter-spacing: 0.4px
-      line-height: 20px
-    &__text
-      flex-basis: 34%
-      margin-bottom: 1.21rem
-      &:last-of-type
-        margin-bottom: 7.2rem
-    &__heading
-      font-size: 1.285rem
-      line-height: 1.78rem
-      font-family: 'Yeseva one', cursive
-      color: $primary
-      text-transform: uppercase
-      margin-bottom: 0.52rem
-  &-pagination
-    &-bullet
-      background-color: rgba($light, 0.3)
-      &-active
-        background-color: $light
-  &-button
-    &-prev, &-next
-      bottom: 0
-      top: auto
-      background-size: 42px
-      width: 42px
-      height: 14px
-      &::after
-        display: none
-    &-prev
-      left: 0
-      background: url('../img/arrow-prev.svg') 
-    &-next
-      background: url('../img/arrow-next.svg') 
+    &-wrapper
+        margin-bottom: 45px
+    &-slide
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 3rem
+        &__wrap
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: space-between
+            margin-right: 39px
+        &__image
+            margin-top: -15rem
+            width: 100%
+        &__value
+            display: inline-block
+            font-family: 'Futura Book'
+            font-size: 15px
+            line-height: 20px
+            max-width: 111px
+        &__text
+            flex-basis: 34%
+            margin-bottom: 1.1rem
+        &__heading
+            font-size: 1.285rem
+            line-height: 1.78rem
+            font-family: 'Yeseva One', cursive
+            color: $primary
+            text-transform: uppercase
+            margin-bottom: 7px
+    &-pagination
+        &-bullet
+            background: rgba($light, 0.3)
+            width: 0.714rem
+            height: 0.714rem
+            &-active
+                background: $light
+    &-button
+        &-prev, &-next
+            bottom: 0
+            top: auto
+            background-size: 42px
+            width: 42px
+            height: 14px
+            &::after
+                display: none
+        &-prev
+            left: 0
+            background: url('../img/arrow-prev.svg') no-repeat center
+        &-next
+            background: url('../img/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+    margin-right: 13px
 .swiper-container-horizontal>.swiper-pagination-bullets
-  width: auto
-  bottom: -1px
-.swiper-slide .swiper-slide-active
-  width: 529px
+    width: auto
+    bottom: -1px

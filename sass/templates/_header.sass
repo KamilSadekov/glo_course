@@ -1,40 +1,37 @@
 .header
-  position: fixed
-  left: 0
-  top: 0
-  width: 100%
-  z-index: 99
-  background-color: $dark
-  padding: 24px 0 
-
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 4
+    background-color: $dark
+    padding: 1.71rem 0
 .menu
-  display: flex
-  justify-content: space-between
-  align-items: center
-
+    display: flex
+    justify-content: space-between
+    align-items: center
 .logo
-  font-size: 1.075rem
-  color: $primary
-  text-transform: uppercase
-
-.nav
-  &__item
-    color: $light
-    text-decoration: none
+    font-weight: 500
+    font-size: 1.075rem
+    line-height: 1.14rem
+    color: $primary
     text-transform: uppercase
-    margin-right: 2.5rem
-    transition: color 0.2s
-    &:hover
-      color: $primary
-
+.nav
+    margin-left: 1.4rem
+    &__item
+        font-style: normal
+        font-weight: normal
+        font-size: 1rem
+        line-height: 1.14rem
+        color: $light
+        text-decoration: none
+        text-transform: uppercase
+        margin-right: 2.66rem
+        transition: 0.2
+        &:hover
+            color: $primary
 .phone
-  color: $primary
-
+    color: $primary
 .contacts
-  &__phone
-    margin-right: 45px
-  &__button
-    padding: 11px 21px;
-    letter-spacing: 0.3px
-.requestCall
-  animation: call 1.5s infinite
+    &__phone
+        margin-right: 3.214rem

@@ -1,63 +1,80 @@
 .button
-  padding: 11px 24px
-  border: none
-  border-radius: 2px 
-  text-transform: uppercase
-  font-size: 0.93rem
-  &:hover
-    cursor: pointer
-  &--primary
-    background-color: $primary
-    color: $light
-    box-shadow: 0 5px 15px rgba($primary, 0.2)
-    transition: box-shadow 0.3s
+    padding: 11px 24px
+    border: none
+    border-radius: 2px
+    text-transform: uppercase
+    font-size: 0.93rem
     &:hover
-      box-shadow: none
-  &--outline
-    border: 1px solid $light
-    background-color: transparent
-    color: $light
+        cursor: pointer
+    &--primary
+        background-color: $primary
+        color: $light
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+        transition: box-shadow 0.3
+        &:hover
+            box-shadow: none
+    &--outline
+        border: 1px solid $light
+        background-color: transparent
+        color: $light
+    &-up
+        display: none
+        position: fixed
+        bottom: 2.85rem
+        right: 2.85rem
+        opacity: 0.6
+        transition: 0.5s
+        width: 30px
+        height: 30px
+        background: #000 url("../img/arrow-up.svg") no-repeat center
+        border: 1.5px solid #E3B873
+        border-radius: 50%
+        &:hover
+            cursor: pointer
+.pricetag--desing
+    width: 16.28rem
 .label
-  font-family: 'Futura Book', cursive
-  font-size: 1.07rem
-  &--light
-    color: rgba($light, 0.5)
+    font-size: 1.07rem
+    line-height: 20px
+    margin: -1px
+    &--light
+        color: rgba($light, 0.5)
 .input
-  background: transparent
-  border: none
-  border-bottom: 1px solid rgba($light, 0.15)
-  font-size: 1.285rem
-  color: $light
-  padding: 0.5rem 0
-  &--light
-    &::placeholder
-      color: $light
-  &--dar
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid rgba($secondary, 0.15)
+    font-size: 1.285rem
+    color: $light
+    padding: 0.5rem 0
+    &--light
+        &::placeholder
+            color: $light
 .policy
-  &__checkbox
-    opacity: 0
-    visibility: hidden
-    &:checked +
-      .policy__label
+    &__checkbox
+        opacity: 0
+        visibility: hidden
+        &:checked +
+            .policy__lable
+                &::before
+                    background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+    &__lable
+        font-size: 1.142rem
+        line-height: 22px
+        display: flex
+        align-items: center
         &::before
-          background: $primary url("../img/checked.svg") no-repeat center / 0.8rem
-  &__label
-    display: flex
-    align-items: center 
-    font-size: 16px 
-    &::before
-      content: ''
-      height: 18px
-      width: 18px
-      border: 1px solid $primary
-      border-radius: 1px
-      cursor: pointer
-      margin-right: 0.64rem
-    &--center
-      justify-content: center
+            content: ''
+            width: 18px
+            height: 18px
+            border: 1px solid $primary
+            border-radius: 1px
+            cursor: pointer
+            margin-right: 0.64rem
+        &--center
+            justify-content: center
 div
-  &.invalid
-    color: tomato
+    &.invalid
+        color: tomato
 input
-  &.invalid
-    border-bottom: 1px solid tomato
+    &.invalid
+        border-bottom: 1px solid tomato

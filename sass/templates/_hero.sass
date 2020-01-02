@@ -1,111 +1,107 @@
 .hero
-  position: relative
-  display: flex
-  flex-direction: column
-  justify-content: center
-  padding-top: 100px 
-  background: $dark url('../img/hero.jpg') no-repeat center / cover
-  height: 100vh
-  color: $light
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-color: rgba($dark, 0.5)
-  &::after
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    height: 3.46rem
-    background: $dark
-  &__content
     position: relative
-    max-width: 47.85rem
-    margin-left: 4.28rem
-  &__text
-    font-size: 1.57rem
-    max-width: 500px
-    line-height: 131%
-    margin: 0
-    margin-bottom: 2.92rem
-  &__button
-    margin-right: 16px    
-  &__instagram
-    position: absolute
-    left: 0
-    top: 0
-    max-width: 82px
-    height: 100%
-  &__scroll-down
-      position: absolute
-      z-index: 3
-      display: flex
-      justify-content: center
-      align-items: center
-      left: 0
-      bottom: 0
-      min-width: 17.6rem
-      min-height: 6.92rem
-      font-size: 0.87rem
-      font-family: 'Yeseva One'
-      background-color: $dark  
-      text-transform: uppercase
-      text-decoration: none
-      color: $light
-      &::after
-        content: ''
-        background: url(../img/Vector.svg) no-repeat center
-        width: 29px
-        height: 29px
-        border: 1px solid $primary
-        border-radius: 50%
-        margin-left: 17px 
-
-
-.instagram
-  display: flex
-  justify-content: center
-  align-items: center
-  background-color: $dark
-  &__link
     display: flex
-    align-items: center  
-    text-transform: uppercase
-    text-decoration: none
-    color: $primary
-    transform:  rotate(90deg)
-    line-height: 0.8
-    font-size: 1.1rem
-    letter-spacing: -0.4px
+    font-display: column
+    justify-content: center
+    align-items: flex-start
+    padding-top: 100px
+    background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
+    height: 100vh
+    color: $light
+    &::before
+        content: ''
+        top: 0
+        left: 0
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba($dark, 0.7)
     &::after
-      content: ''
-      width: 50px
-      height: 1px
-      background-color: $primary
-      margin-left: 14px
-
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 3.46rem
+        width: 100%
+        background-color: $dark
+    &__content
+        position: relative
+        max-width: 47.85rem
+        margin-left: 4.28rem
+    &__text
+        max-width: 504px
+        font-style: normal
+        font-weight: normal
+        font-size: 1.57rem
+        line-height: 2.14rem
+        color: $light
+        margin: 0
+        margin-bottom: 3.3rem
+    &__button
+        margin-right: 1.42rem
+        height: 3.64rem
+        max-width: 14.78rem
+        width: 100%
+    &__instagram
+        position: absolute
+        left: 0
+        top: 0
+        max-width: 80px
+        height: 100%
+    &__scroll-down
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        left: 0
+        bottom: 0
+        z-index: 3
+        min-width: 17.6rem
+        min-height: 6.92rem
+        background-color: $dark
+        text-transform: uppercase
+        text-decoration: none
+        color: $light
+        font-family: 'Yeseva One', cursive
+        font-size: 0.85rem
+        line-height: 138.6%
+        &::after
+            content: ''
+            background: url('../img/arrow-down.svg') no-repeat center
+            width: 30px
+            height: 30px
+            border: 1.5px solid $primary
+            border-radius: 50%
+            margin-left: 1.21rem
+.instagram
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $dark
+    &__link
+        display: flex
+        align-items: center
+        font-size: 1.07rem
+        line-height: 1.64rem
+        text-transform: uppercase
+        color: $primary
+        text-decoration: none
+        transform: rotate(90deg)
+        &::after
+            content: ''
+            width: 50px
+            height: 1px
+            background-color: $primary
+            margin-left: 1rem
 .title
-  margin: 0
-  margin-bottom: 1.36rem
-  font-family: 'Yeseva One', cursive
-  text-transform: uppercase
-  font-size: 2.86rem
-  line-height: 1.33
-  letter-spacing: -0.13px
-  &--primary
-    color: $primary
-.hero
-  .button
+    margin: 0
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase
+    font-size: 2.857rem
+    font-style: normal
+    font-weight: normal
+    line-height: 3.78rem
+    margin-bottom: 1.1rem
     &--primary
-      padding: 18px 25px
-      letter-spacing: 0.3px
-    &--outline
-      padding: 17px 42px
-      letter-spacing: 0.4px
-
+        color: $primary
