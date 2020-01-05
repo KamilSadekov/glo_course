@@ -1,8 +1,15 @@
+.col-30--comand
+    margin: 0 -6px
+
 .comand
-    margin-top: -35rem
+    margin-top: -32rem
+    // display: flex
+    // justify-content: space-between
+    &--row 
+        display: flex
+        justify-content: center
     &__foto
         position: relative
-        width: 70%
     &__title
         position: absolute
     &__text
@@ -31,11 +38,12 @@
             border-radius: 30px
 .foto
     &__icon-1, &__icon-2, &__icon-3
+        margin: 0 auto
         position: absolute
         width: 100%
         height: 100%
         top: -35px
-        left: -35px
+        left: 19px
         max-width: 70px
         max-height: 70px
         
@@ -84,4 +92,8 @@
         background-color: $primary
         color: $light
         width: 100%
-        padding: 1rem 1.642rem       
+        padding: 1rem 1.642rem 
+.foto__image
+        margin-left: 56px
+
+
